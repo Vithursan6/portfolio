@@ -5,6 +5,7 @@ This project was created as an online porfolio of my work. It is still on-going 
 
 Links:
 https://vithursan6.github.io/portfolio/
+https://github.com/Vithursan6/portfolio
 
 
 ##LICENSE
