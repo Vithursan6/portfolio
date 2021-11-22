@@ -3,6 +3,8 @@ Candidate Portfolio Project
 
 This project was created as an online porfolio of my work. It is still on-going and will be updated on a weekly basis.
 
+Links:
+https://vithursan6.github.io/portfolio/
 
 
 ##LICENSE
