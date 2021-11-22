@@ -16,6 +16,7 @@ body {
     border-radius: 10px;
     font-size: 20px;
     background-color: var(--tertiary-color);
+    opacity: 90%;
 
 }
 
@@ -50,6 +51,11 @@ header h1 a {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.54);
 }
 
+header h1:hover {
+    color: yellow;
+
+}
+
 header nav ul {
     display: flex;
     justify-content:space-evenly;
@@ -61,8 +67,13 @@ header nav ul {
 
 header nav ul li a {
     font-size: 20px;
-    color:rgb(212, 212, 204);
+    color:rgba(212, 212, 204, 0.85);
 
+}
+
+header nav ul li a:hover {
+    font: 27px;
+    color: yellow;
 }
 
 .hero {
@@ -184,19 +195,30 @@ header nav ul li a {
 
 }
 
-.work1 {
+.work {
     display: flex;
     justify-content: space-between;
-    height:500px;
+    height:600px;
     padding: 30px 15px;
     border: 5px solid var(--primary-color);
 
+}
+
+.work1 {
+    display: flex;
+  }
+
+.work2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
 
 }
 
 .project1, .project2, .project3, .project4, .project5 {
-    height: 250px;
-    width: 150px;
+    display: flex;
+    height: 300px;
+    width: 200px;
     background-color: #758eff;
     font-size: 25px;
     text-align: center;
@@ -206,18 +228,47 @@ header nav ul li a {
     
 }
 
-.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover {
-    background-color: salmon;
-    height: 300px;
-    width: 200px;
+.project2, .project3, .project4, .project5 {
+    
 }
 
 .project1 {
+    text-align: right;
+    align-items: center;
     background-image: url(./runbuddy.png);
     background-size:contain;
     background-attachment:scroll;
+    flex: 80%;
+
 }
 
+.spn11 { 
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+  
+    z-index: 1;
+  
+    /* fixes overlap error in IE7/8, 
+       make sure you have an empty gif */
+    background-image: url('empty.gif');
+  }   
+
+
+
+.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover {
+    background-color: salmon;
+    height: 310px;
+    width: 210px;
+    position: relative;
+}
+
+
+
+
+/*contact section */
 
 #contact {
     display: flex;
@@ -249,10 +300,6 @@ header nav ul li a {
     background-color: var(--secondary-color);
 }
 
-.contact2 ul li {
-    
-
-}
 
 .contact2 {
     display: inline-flex;
@@ -265,3 +312,38 @@ header nav ul li a {
     justify-content: space-between;
 
 }
+
+/* MEDIA QUERY FOR SMALER DESKTOP SCREENS AND SMALLER*/
+@media screen and (max-width: 980px) {
+    .header {
+        padding-bottom: 20px;
+        justify-content: center;
+        position: relative;
+
+    }
+
+    .contact2 {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+    /* Media query for tablets and smaller */
+@media screen and (max-width: 768px) {
+    .project1, .project2, .project3, .project4, .project5{
+
+        display: flex;
+        justify-content: space-around;
+        align-self: center;
+        flex: 0 32%;
+    }
+
+
+}
+
+
+
+
+    /*Media query for mobile phones and smaller*/
+@media screen and (max-width: 575px) {}
