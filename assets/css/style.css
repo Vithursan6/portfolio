@@ -241,6 +241,18 @@ header nav ul li a:hover {
 
 }
 
+.project2 {
+        display: flexbox;
+        justify-content: center;
+        text-align: right;
+        align-items: center;
+        background-image: url(./project2.png);
+        background-size:contain;
+        background-attachment:scroll;
+        flex: 80%;
+    
+}
+
 .project1 a {
     color: rgb(9, 37, 35);
     font-size: 30px ;
